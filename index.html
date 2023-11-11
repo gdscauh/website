@@ -1,32 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./Assets/Logo.png">
     <title>Google Developers Student Club - Amity University Haryana</title>
-    
+
 </head>
+
 <body>
     <!-- Navbar-->
-    <nav class="bg-white p-4">
-        <div class="container mx-auto flex flex-col md:flex-row justify-around items-center">
-            <!-- Logo or Brand -->
-            <a href="#" class="text-gray-800 text-lg font-semibold flex flex-row items-center">
-                <img src="./Assets/Logo.png" class="h-auto w-auto"> <!-- Adjust height and width as needed -->
-                <span class="ml-2 hover:border-b-violet-600 hover:text-gray-700">GDSC-AUH</span>
-            </a>
-    
-            <!-- Navigation Links -->
-            <div class="flex space-x-4 text-lg mt-4 md:mt-0">
-                <a href="#" class="nav-link text-gray-600  font-semibold relative">Home</a>
-                <a href="#" class="nav-link text-gray-600  font-semibold relative">About</a>
-                <a href="#" class="nav-link text-gray-600  font-semibold relative">Services</a>
-                <a href="#" class="nav-link text-gray-600  font-semibold relative">Contact</a>
+    <nav class="bg-white p-2 md:p-4 shadow-md shadow-slate-300">
+        <div class="container mx-auto flex flex-col md:flex-row md:justify-between md:items-center">
+            <div class="flex flex-row justify-between items-center md:items-end">
+                <a href="#" class="text-gray-800 text-lg font-semibold flex flex-row items-center">
+                    <img src="./Assets/Logo.png" class="h-auto w-auto">
+                    <span
+                        class="ml-2 hover:border-b-violet-600 hover:text-gray-700 hidden md:block transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">GDSC-AUH</span>
+                </a>
+                <input type="checkbox" id="menuToggle" class="hidden md:hidden">
+                <label for="menuToggle" id="menuIcon" class="cursor-pointer md:hidden ">&#9776;</label>
+            </div>
+
+            <div class="flex md:space-x-4 text-lg mt-4 md:mt-0 md:flex-grow justify-end items-end mr-5 flex-col md:flex-row"
+                id="menuItems">
+                <a href="#"
+                    class="nav-link text-gray-600 font-semibold md:ml-4 md:mb-0 mb-2 md:transition md:transform hover:-translate-y-1 md:motion-reduce:transition-none md:motion-reduce:hover:transform-none ...">Home</a>
+                <a href="#"
+                    class="nav-link text-gray-600 font-semibold md:ml-4 md:mb-0 mb-2 md:transition md:transform hover:-translate-y-1 md:motion-reduce:transition-none md:motion-reduce:hover:transform-none ...">About</a>
+                <a href="#"
+                    class="nav-link text-gray-600 font-semibold md:ml-4 md:mb-0 mb-2 md:transition md:transform hover:-translate-y-1 md:motion-reduce:transition-none md:motion-reduce:hover:transform-none ...">Team</a>
+                <a href="#"
+                    class="nav-link text-gray-600 font-semibold md:ml-4 md:mb-0 mb-2 md:transition md:transform hover:-translate-y-1 md:motion-reduce:transition-none md:motion-reduce:hover:transform-none ...">Contact</a>
+                <a class="relative">
+                    <button
+                        class="rounded-md bg-blue-700 text-white px-2 md:px-4 py-1 text-center font-semibold transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ..."
+                        id="menuButton">
+                        What's New
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
+<main class="h-96">
+
+</main>
+    <footer class="bg-white pt-2 md:pt-4 pb-2 px-2 md:px-28 text-md mt-2">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 p-5 text-xl"><span class="font-bold text-3xl">Questions?</span>
+                <ul class="flex flex-row justify-start my-4">
+                    <li class="px-1">
+                        <a href="#">
+                        <img src="./Assets/icons8-facebook.svg" class="social-icons">
+                    </a>
+                    </li>
+                    <li class="px-1">
+                        <a href="#">
+                        <img src="./Assets/insta_icon.png" class="social-icons">
+                        
+                    </a>
+                    </li>
+                    <li class="px-1">
+                        <a href="#">
+                        <img src="./Assets/linkedin_icon.png" class="social-icons">
+                    </a>
+                    </li>
+                    <li class="px-1">
+                        <a href="#">
+                        <img src="./Assets/youtube_icon.png" class="social-icons">
+                    </a>
+                    </li>
+                </ul>
+                <div></div>
+            <div class="flex flex-col"><span>Or e-mail us at: <div class="font-bold">gdsc.auh@gmail.com</div></span></div>
+        </div>
+            <div class="p-5 flex justify-center flex-col items-stretch  w-full md:w-1/2 text-center">
+                <button class="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded ">
+                    <a href="#">Join Our Chapter </a>
+                </button>
+                <div>to stay updated with our events</div>
+            </div>
+        </div>
+        <div class="container flex flex-col md:flex-row items-center justify-center">
+            <div id="first-sub-container" class="w-full flex flex-row md:w-1/2 justify-around">
+                <div>
+                    <h2 class="text-xl font-semibold mb-4 border-b-4 border-blue-500 pb-2">Section 1</h2>
+                    <ul>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 1</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 2</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 3</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-4 border-b-4 border-red-500 pb-2">Section 2</h2>
+                    <ul>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 4</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 5</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 6</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="second-sub-container" class="w-full flex flex-row md:w-1/2 justify-around">
+                <div>
+                    <h2 class="text-xl font-semibold mb-4 border-b-4 border-yellow-500 pb-2">Section 3</h2>
+                    <ul>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 7</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 8</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 9</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-4 border-b-4 border-green-500 pb-2">Section 4</h2>
+                    <ul>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 10</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 11</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Link 12</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex flex-row items-center justify-center">
+                <img src="./Assets/Logo.png" alt="logo" class="h-10 w-12"> <span>Google Developer Student Club Amity University Haryana</span>
+            </div>
+            <div class="text-[12px] mt-3">Google Developer Student Club, AUH. All Rights Reserved</div>
+        </div>
+    </footer>
+    
+   
 </body>
 <script src="./script.js"></script>
 

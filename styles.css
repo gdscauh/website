@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Livvic&family=Poppins&display=swap");
 
+  
 * {
   font-family: "Poppins", sans-serif;
   margin: 0px;
@@ -37,4 +38,13 @@
 .nav-link:nth-child(4):hover::after {
     width: 100%;
     background-color: #48bb78; /* Green color on hover */
+}
+
+.social-icons{
+    display: inline-block;
+    border-radius: 3.75rem;
+    box-shadow: 0 0 0.188rem #3d3b3b;
+    padding: 0.5rem;
+    height: 50px;
+    width: 50px;
 }
