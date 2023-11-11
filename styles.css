@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Livvic&family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 6px;
+    border-radius:5px ;
+    background-color: transparent; /* Initial color is transparent */
+    transition: width 0.3s, background-color 0.3s; /* Add background-color to the transition */
+}
+
+.nav-link:nth-child(1):hover::after {
+    width: 100%;
+    background-color: #4299e1; /* Blue color on hover */
+}
+
+.nav-link:nth-child(2):hover::after {
+    width: 100%;
+    background-color: #e53e3e; /* Red color on hover */
+}
+
+.nav-link:nth-child(3):hover::after {
+    width: 100%;
+    background-color: #ecc94b; /* Yellow color on hover */
+}
+
+.nav-link:nth-child(4):hover::after {
+    width: 100%;
+    background-color: #48bb78; /* Green color on hover */
+}
